@@ -1,0 +1,41 @@
+{
+  "name": "grover-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "test:run": "vitest run"
+  },
+  "prisma": {
+    "seed": "ts-node --project tsconfig.seed.json prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "date-fns": "^3.6.0",
+    "next": "14.x",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "react-icons": "^4.12.0",
+    "styled-components": "^6.1.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.0.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "24.10.0",
+    "@types/styled-components": "^5.1.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "jsdom": "^22.1.0",
+    "node-mocks-http": "^1.17.2",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.0",
+    "vitest": "^1.0.0"
+  }
+}
